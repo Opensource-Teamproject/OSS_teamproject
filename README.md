@@ -1,4 +1,4 @@
-## test_repo
+## 팀프로젝트 일정관리 프로그램
 
 ![팀프로젝트_일정관리](https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg)
 
