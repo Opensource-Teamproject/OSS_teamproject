@@ -11,7 +11,7 @@ typedef struct{
     char Due[20];        //종료날짜
     int Importance;              //중요도
 } Schedule;
- 
+//함수 
 
 int createSchedule(Schedule *s);                  // 일정을 추가하는 함수
 void readSchedule(Schedule s);                    // 하나의 일정 출력 함수
