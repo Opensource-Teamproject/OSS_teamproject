@@ -26,4 +26,3 @@ int loadData(Schedule *s[]);                     // 파일 불러오기
 
 void listSchedule(Schedule *s[], int count);      // 전체 등록된 스케줄 리스트 출력
 int selectMenu();   //메뉴 선택
-]
