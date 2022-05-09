@@ -3,7 +3,9 @@
 #include "saveload.h"
 
 int main(void){
-    int count = 0, menu,result=0;
+    int count=0;
+    int menu=0;
+    int result=0;
     int index=0;//데이터번호
     Schedule *fp[100];
 
@@ -24,7 +26,7 @@ int main(void){
              count += createSchedule(fp[index++]);
         }
         else if (menu == 3){
-            int no = selectDataNo(fp, index);
+            int no = deleteSchedule(fp, index);
             if(no==0){
               printf("=> 취소됨!\n");
               continue;
@@ -32,7 +34,7 @@ int main(void){
           updateSchedule(fp[no-1]);
         }
         else if (menu == 4){
-            int no = deleteProduct(fp, index);
+            int no = deleteSchedule(fp, index);
              int deleteok;
              printf("정말로 삭제하시겠습니까?(삭제 : 1)");
             scanf("%d", &deleteok);

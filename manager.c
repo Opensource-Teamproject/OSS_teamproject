@@ -1,12 +1,12 @@
 #include "manager.h"
 
 void listSchedule(Schedule *s[], int count){
-    printf("\nNO    해야 할 일              이름        시작날짜        종료날짜      중요도\n");
-    printf("====================================================================\n");
+    printf("\n NO   해야 할 일  이름     시작날짜     종료날짜  중요도\n");
+    printf("==========================================================\n");
     for(int i=0; i<count; i++){
         if(s[i] == NULL) continue;
         printf("%2d ", i+1);
-        readProduct(*s[i]);
+        readSchedule(*s[i]);
     }
     printf("\n");
 }      // 전체 등록된 제품 리스트 출력
@@ -24,7 +24,7 @@ void searchName(Schedule *s[], int count){
        if(s[i]->Importance == -1) continue;  
             if(strstr(s[i]->Schedule_name, search)){
                 printf("%2d ", i+1);
-                readProduct(*s[i]);
+                readSchedule(*s[i]);
                 scnt++;
             }
     }
@@ -44,12 +44,12 @@ void searchImportance(Schedule *s[], int count){
 	scanf("%d", &min);
 	printf("최대 중요도: ");
 	scanf("%d", &max);
-    printf("\nNO    해야 할 일              이름        시작날짜        종료날짜      중요도\n");
-    printf("====================================================================\n");
+    printf("\n NO   해야 할 일  이름     시작날짜     종료날짜  중요도\n");
+    printf("==========================================================\n");
 	for(int i =0; i<count; i++){
 		if(s[i]->Importance >= min && s[i]->Importance <= max){
 			printf("%2d", i+1);
-			readProduct(*s[i]);
+			readSchedule(*s[i]);
 			printf("\n");
 			scnt++;
 		}

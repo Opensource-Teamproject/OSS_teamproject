@@ -12,7 +12,6 @@ typedef struct{
     int Importance;              //중요도
 } Schedule;
 //함수 
-int selectDataNo(Schedule *s, int count);
 
 int createSchedule(Schedule *s);                  // 일정을 추가하는 함수
 void readSchedule(Schedule s);                    // 하나의 일정 출력 함수
