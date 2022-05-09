@@ -22,16 +22,16 @@ int selectMenu(){
 
 int createSchedule(Schedule *s){
     printf("해야 할 일정을 입력해주세요! ");
-    scanf("%s", s->Todo);
+    scanf(" %[^\n]s", s->Todo);
     printf("작성자의 이름을 입력해주세요! ");
-    scanf("%s", s->Schedule_name);
+    scanf(" %s", s->Schedule_name);
     printf("시작 날짜는 언제입니까? (20XX XX XX 형식으로) ");
-    scanf("%s", s->Date);
-    printf("종료 날짜는 언제입니까? (20XX XX XX 형식으로)");
-    scanf("%s", s->Due);
-    printf("중요도는? (1~5 범위)");
+    scanf(" %[^\n]s", s->Date);
+    printf("종료 날짜는 언제입니까? (20XX XX XX 형식으로) ");
+    scanf(" %[^\n]s", s->Due);
+    printf("중요도는? (1~5 범위) ");
     scanf("%d", &s->Importance);
-    printf("=>추가됨!");
+    printf("\n=>추가됨!");
     return 1;
 }
 
@@ -41,7 +41,7 @@ void readSchedule(Schedule s){
 
 }
 
-int updateProduct(Schedule *s){
+int updateSchedule(Schedule *s){
     printf("업데이트 할 일정을 입력해주세요! ");
     scanf(" %[^\n]s", s->Todo);
     printf("업데이트 한 작성자의 이름을 입력해주세요! ");
@@ -56,21 +56,13 @@ int updateProduct(Schedule *s){
     return 1;
 }
 
-int selectDataNo(Schedule *s, int count){
-  int no;
-  listProduct(s,count);
-  printf("번호는 (취소 :0)? ");
-  scanf("%d", &no);
-  return no;
 
-}
-
-int deleteProduct(Schedule *s){
-    int i;
-
-    s->Importance=-1;
-
-    return 1;
+int deleteSchedule(Schedule *s[], int count){
+    int no;
+    listSchedule(s, count);
+    printf("번호는 (취소:0)? ");
+    scanf("%d", &no);
+    return no;
 }
 
 
