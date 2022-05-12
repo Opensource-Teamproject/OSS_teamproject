@@ -1,3 +1,5 @@
+
+//manager.c file
 #include "manager.h"
 
 void listSchedule(Schedule *s[], int count){
