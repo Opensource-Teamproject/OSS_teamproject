@@ -5,7 +5,7 @@ void saveData(Schedule *s[], int count){
      fp = fopen("product.txt", "wt");
      for(int i=0; i<count; i++){
                 if(s[i] == NULL) continue;
-                fprintf(fp,"%s %s %s %s %d\n", s[i]->Todo, s[i]->Schedule_name, s[i]->Date, s[i]->Due, s[i]->Importance);
+                fprintf(fp,"%s %s %s %s %d\n", s[i]->Todo, s[i]->Date, s[i]->Due, s[i]->Schedule_name, s[i]->Importance);
         }
         fclose(fp);
         printf("저장됨!\n");
@@ -21,8 +21,8 @@ int loadData(Schedule *s[]){
                 return 0;
         }
         else{ 
-            for(int i=0; i< 100; i++){
-                fscanf(fp,"%[^\n]s %s %[^\n]s %[^\n]s %d", s[i]->Todo, s[i]->Schedule_name, s[i]->Date, s[i]->Due, &s[i]->Importance);
+            for(int i=0; i < 100; i++){
+                fscanf(fp,"%[^\n]s %[^\n]s %[^\n]s %s %d", s[i]->Todo, s[i]->Date, s[i]->Due, s[i]->Schedule_name, &s[i]->Importance);
                 count++;
                 if(feof(fp)){
                         break;

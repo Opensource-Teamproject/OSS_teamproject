@@ -3,7 +3,7 @@
 #include "manager.h"
 
 void listSchedule(Schedule *s[], int count){
-    printf("\n NO   해야 할 일  이름     시작날짜     종료날짜  중요도\n");
+    printf("\n NO   해야 할 일   시작날짜     종료날짜     이름    중요도\n");
     printf("==========================================================\n");
     for(int i=0; i<count; i++){
         if(s[i] == NULL) continue;
@@ -46,7 +46,7 @@ void searchImportance(Schedule *s[], int count){
 	scanf("%d", &min);
 	printf("최대 중요도: ");
 	scanf("%d", &max);
-    printf("\n NO   해야 할 일  이름     시작날짜     종료날짜  중요도\n");
+    printf("\n NO   해야 할 일   시작날짜     종료날짜     이름    중요도\n");
     printf("==========================================================\n");
 	for(int i =0; i<count; i++){
 		if(s[i]->Importance >= min && s[i]->Importance <= max){

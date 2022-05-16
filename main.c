@@ -5,9 +5,13 @@
 int main(void){
     int count=0;
     int menu=0;
-    int result=0;
-    int index=0;//데이터번호
+
     Schedule *fp[100];
+    
+    int index = 0;
+
+    count = loadData(fp);
+    index = count;
 
     while (1){
         menu = selectMenu();
@@ -16,10 +20,12 @@ int main(void){
             if(count==0) continue;
 
         if (menu == 1){
-            if(count > 0)
+            if(count > 0){
                 listSchedule(fp, index);
-            else
+            }
+            else{
                 printf("데이터가 없습니다.\n");
+            }
         }
         else if (menu == 2){
             fp[index] = (Schedule *)malloc(sizeof(Schedule));
