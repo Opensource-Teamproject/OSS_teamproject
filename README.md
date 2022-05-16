@@ -23,8 +23,15 @@
 일정을 이름으로 검색할 수 있습니다.     
 ![create](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Search.png)   
 
-6. 파일 저장   
+6. 파일 저장
+추가한 데이터를 파일로 저장할 수 있습니다.   
+![save](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Save1.png)  
+![save2](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Save2.png)  
+
 7. 파일 읽어오기   
+저장된 파일을 읽어올 수 있습니다.    
+![load](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Load.png)  
+
 8. 중요도검색   
 9. 일정전체수정   
 10. List 일정   
