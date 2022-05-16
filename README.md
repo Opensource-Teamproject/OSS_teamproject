@@ -32,8 +32,12 @@
 저장된 파일을 읽어올 수 있습니다.    
 ![load](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Load.png)  
 
-8. 중요도검색   
-9. 일정전체수정   
+8. 중요도검색    
+![searchIm](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/searchIm.png)  
+
+9. 이름 검색     
+![searchname](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/searchname.png)
+
 10. List 일정   
 작성날짜, 맡은 사람이름, 할 일, due, 중요도(1~5)
 
