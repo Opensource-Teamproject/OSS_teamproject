@@ -29,7 +29,7 @@ int main(void){
         }
         else if (menu == 2){
             fp[index] = (Schedule *)malloc(sizeof(Schedule));
-             count += createSchedule(fp[index++]);
+            count += createSchedule(fp[index++]);
         }
         else if (menu == 3){
             int no = deleteSchedule(fp, index);
