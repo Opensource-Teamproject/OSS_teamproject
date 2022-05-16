@@ -37,7 +37,7 @@ int createSchedule(Schedule *s){
 
 void readSchedule(Schedule s){
 
-    printf ("%20s %8s %8s %8s %d\n", s.Todo, s.Schedule_name,s.Date, s.Due,s.Importance);
+    printf ("%20s %8s %8s %8s %d\n", s.Todo, s.Schedule_name, s.Date, s.Due, s.Importance);
 
 }
 
