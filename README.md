@@ -20,6 +20,9 @@
 ![create](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Delete.png)   
 
 5. 이름검색   
+일정을 이름으로 검색할 수 있습니다.     
+![create](https://github.com/Opensource-Teamproject/OSS_teamproject/blob/main/Screenshots/Search.png)   
+
 6. 파일 저장   
 7. 파일 읽어오기   
 8. 중요도검색   

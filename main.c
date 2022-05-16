@@ -1,7 +1,7 @@
 #include "schedule.h"
 #include "manager.h"
 #include "saveload.h"
-//main.c file
+//main.c files
 int main(void){
     int count=0;
     int menu=0;
